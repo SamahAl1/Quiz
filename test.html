@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار جدول الضرب</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f4f8;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        select, button {
+            padding: 10px;
+            font-size: 18px;
+            margin: 15px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>اختر جدول معين للاختبار</h1>
+    <select id="tableTestSelect">
+        <option value="2">جدول 2</option>
+        <option value="3">جدول 3</option>
+        <option value="4">جدول 4</option>
+        <!-- Add more options up to 12 -->
+    </select>
+    <button onclick="startTest()">ابدأ الاختبار</button>
+
+    <div id="testResult"></div>
+
+    <script>
+        function startTest() {
+            const table = document.getElementById('tableTestSelect').value;
+            // logic for test
+            document.getElementById('testResult').innerHTML = `<h2>تم اختبار جدول ${table}</h2><br><button onclick="window.location.href='index.html'">الرجوع إلى الصفحة الرئيسية</button>`;
+        }
+    </script>
+</body>
+</html>

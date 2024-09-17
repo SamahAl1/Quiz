@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مراجعة جدول الضرب</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffbe7;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        select, button {
+            padding: 10px;
+            font-size: 18px;
+            margin: 15px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>اختر جدول الضرب للمراجعة</h1>
+    <select id="tableSelect">
+        <option value="2">جدول 2</option>
+        <option value="3">جدول 3</option>
+        <option value="4">جدول 4</option>
+        <!-- Add other options here up to 12 -->
+    </select>
+    <button onclick="startReview()">ابدأ المراجعة</button>
+
+    <div id="result"></div>
+
+    <script>
+        function startReview() {
+            const table = document.getElementById('tableSelect').value;
+            // logic for review
+            document.getElementById('result').innerHTML = `<h2>تم استعراض جدول ${table}</h2><br><button onclick="window.location.href='index.html'">الرجوع إلى الصفحة الرئيسية</button>`;
+        }
+    </script>
+</body>
+</html>

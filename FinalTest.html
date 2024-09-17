@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاختبار النهائي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #ffc107;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+    <h1>الاختبار النهائي في جميع الجداول</h1>
+    <p>اختبر معلوماتك في جميع الجداول من 2 إلى 12.</p>
+    <button onclick="startFinalTest()">ابدأ الاختبار النهائي</button>
+
+    <div id="finalTestResult"></div>
+
+    <script>
+        function startFinalTest() {
+            // logic for final test
+            document.getElementById('finalTestResult').innerHTML = `<h2>لقد انتهيت من جميع الجداول بنجاح!</h2><br><button onclick="window.location.href='index.html'">الرجوع إلى الصفحة الرئيسية</button>`;
+        }
+    </script>
+</body>
+</html>
